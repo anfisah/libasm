@@ -9,12 +9,21 @@ while:
 	movzx r8, BYTE [rdi + rcx]
 	movzx r9, BYTE [rsi + rcx]
 	cmp r8, r9
-	jne diff
+	jg sup
+	jl inf
+	cmp rdi, rsi
+	je end
 	inc rcx
 	jmp while
 
-diff:
-	sub r8, r9
-	mov rax, r8
+sup:
+	mov rax, 1
 	ret
 
+inf:
+	mov rax, -1
+	ret
+
+end:
+	mov rax, 0
+	ret

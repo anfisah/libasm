@@ -15,9 +15,17 @@
 
 int main(void)
 {
+	char *src = "Hello Word!";
+	char dst[20];
+	char *dup;
 	printf("strlen = %d\n", ft_strlen("Hello word!"));
 	ft_write(1, "write = PP\n", 11);
-	printf("strcmp = %d\n", ft_strcmp("hellal", "hellpl"));
-	printf("strcmp = %d\n", strcmp("hellal", "hellpl"));
+	printf("strcmp = %d\n", ft_strcmp("helll", "hel"));
+	printf("strcmp = %d\n", strcmp("helll", "hel"));
+	ft_strcpy(dst, src);
+	//strcpy(dst, src);
+	printf("strcpy = %s\n", dst);
+	dup = ft_strdup(src);
+	printf("%s", dup);
 	return (0);
 }
