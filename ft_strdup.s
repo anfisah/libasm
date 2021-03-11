@@ -5,12 +5,12 @@ extern _ft_strcpy
 
 section .text
 _ft_strdup:
+	push rdi
     call _ft_strlen
     add rax, 1
-    push rdi
+	mov rdi, rax
     call _malloc
-    pop r8
+    pop rsi
     mov rdi,rax
-    mov rsi, r8
     call _ft_strcpy
     ret
