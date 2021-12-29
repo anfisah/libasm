@@ -1,7 +1,9 @@
 # libasm
 
-42 school project: re-code a set of the libc functions in assembly.
+💻 My first projet at 42 school.
 
-You will find the subject of the project at the root of the repository.
+:question: re-code a set of the libc functions in assembly.
 
-Submitted in march 2021
+:page_with_curl: You will find the subject of the project at the root of the repository.
+
+:calendar: Submitted in march 2021
